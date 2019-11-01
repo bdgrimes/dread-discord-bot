@@ -1,0 +1,28 @@
+{
+  "name": "dread-discord-bot",
+  "version": "1.0.0",
+  "description": "Discord Bot for Dread WoW Guild",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "dev": "nodemon index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bdgrimes/dread-discord-bot.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/bdgrimes/dread-discord-bot/issues"
+  },
+  "homepage": "https://github.com/bdgrimes/dread-discord-bot#readme",
+  "dependencies": {
+    "discord.js": "^11.5.1",
+    "dotenv": "^8.2.0"
+  },
+  "devDependencies": {
+    "nodemon": "^1.19.4"
+  }
+}
