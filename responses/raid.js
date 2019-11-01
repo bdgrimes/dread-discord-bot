@@ -1,15 +1,15 @@
-const formatString = require('./formatString');
+const { RichEmbed } = require('discord.js');
 
-const currentDate = new Date().toLocaleDateString();
+const embed = new RichEmbed();
 
 const content = `
-    [Dread Raid Times]
-
     Molten Core
+
         Tues/Wednesday 7-11 PM EST
 
     Onxyia 
+    
         Friday 9:00 PM EST
 `
 
-module.exports = formatString.pretty(content);
+module.exports = embed.setTitle('[Dread Raid Times]').setDescription(content);
