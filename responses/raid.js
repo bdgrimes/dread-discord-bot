@@ -9,7 +9,7 @@ const content = `
 
     Onxyia 
     
-        Friday 9:00 PM EST
+        Sunday 9:00 PM EST
 `
 
 module.exports = embed.setTitle('[Dread Raid Times]').setDescription(content);
