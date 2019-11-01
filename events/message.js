@@ -1,6 +1,13 @@
+const raidTimes = require('../commands/raid')
+
 const handler = (client, msg) => {
-    if(msg.content === 'ping'){
-        msg.reply('Pong!');
+    switch(msg.content){
+        case('ping'): 
+            msg.reply('pong')
+            break;
+        case('!raid'):
+            raidTimes(msg);
+            break;
     }
 }
 
