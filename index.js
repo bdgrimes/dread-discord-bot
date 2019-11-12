@@ -9,12 +9,14 @@ client.on('ready', () => {
 })
 
 client.on('voiceStateUpdate', (oldMember, newMember) => {
+  const botTestChannel = client.channels.get('639908632544411698');
+
   if(message.getPurgeCollectionStarted()){
       const user = {
         'id' : newMember.id,
         'displayName' : newMember.displayName
       };
-      whitelist.saveUser(user);
+      whitelist.saveUser(user, botTestChannel);
     }
 })
 

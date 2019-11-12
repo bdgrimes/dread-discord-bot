@@ -1,7 +1,7 @@
 const fs = require('fs')
 const filename = 'whitelist.json';
 
-const saveUser = (user) => {
+const saveUser = (user, botTestChannel) => {
     fs.readFile(filename, function (err, data) {
         let whiteListData = [];
         if(data.length > 0){
@@ -19,6 +19,7 @@ const saveUser = (user) => {
         if(userFound) return;
 
         console.log(`User ${user.displayName} saved from the purge`);
+        botTestChannel.send(`User ${user.displayName} saved from the purge`);
 
         whiteListData.push(user);
         fs.writeFile(filename, JSON.stringify(whiteListData), (err) => {
